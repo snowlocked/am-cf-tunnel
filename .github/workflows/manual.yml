@@ -17,7 +17,7 @@ jobs:
       - name: pull
         uses: tgymnich/fork-sync@v2.0
         with:
-          # token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.TOKEN }}
           # owner: ansoncloud8
           base: main
           head: main
