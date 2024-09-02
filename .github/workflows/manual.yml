@@ -1,0 +1,24 @@
+
+name: Upstream Sync
+
+permissions:
+    contents: write
+
+on:
+    schedule:
+        - cron: "0 0 1/7 * *"
+    workflow_dispatch:
+jobs:
+  sync:
+    name: sync
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: pull
+        uses: tgymnich/fork-sync@v2.0
+        with:
+          token: ${{ secrets.TOKEN }}
+          owner: ansoncloud8
+          base: dev
+          head: dev
+          auto_approve: true
