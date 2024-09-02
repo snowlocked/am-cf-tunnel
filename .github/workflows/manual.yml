@@ -19,6 +19,6 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           owner: ansoncloud8
-          base: dev
-          head: dev
+          base: main
+          head: main
           auto_approve: true
