@@ -26,4 +26,4 @@ jobs:
         message: 'Automatically package and commit _worker.js.zip' 
         author_name: github-actions[bot] 
         author_email: actions[bot]@users.noreply.github.com 
-        token: ${{ secrets.GH_TOKEN }} 
+        token: ${{ secrets.TOKEN }}
